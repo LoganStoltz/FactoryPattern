@@ -8,7 +8,7 @@ public class Factory {
         if (monster.toLowerCase() == "goblin") {
             entity = new Goblin(10, 10, 10,10,"Timmy");
             System.out.println("You made a goblin!");
-            System.out.println(entity.toString());
+            System.out.println(entity); //Prints entity stats
         }
 
     }
