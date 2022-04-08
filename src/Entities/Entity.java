@@ -8,9 +8,9 @@ public abstract class Entity
     private int agility;
     private String name;
 
-    public Entity(final int health, final int damage, final int defence, final int agility, final String name)
+    public Entity(int health, int damage, int defence, int agility, String name)
     {
-        if(health < 0 || damage < 0 || defence < 0 || agility < 0 || name.isEmpty())
+        if(health <= 0 || damage < 0 || defence < 0 || agility < 0 || name.isEmpty())
                 throw new IllegalArgumentException("Bad Parameter(s) --- Entity Parent Constructor");
 
         this.health = health;
@@ -18,7 +18,7 @@ public abstract class Entity
         this.defence = defence;
         this.agility = agility;
         this.name = name;
-    }//end Entity Costructor
+    }//end Entity Constructor
 
 }//end Class
 

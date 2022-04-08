@@ -2,7 +2,7 @@ package Entities;
 
 public class Goblin extends Entity
 {
-    public Goblin(final int health, final int damage, final int defence, final int agility, final String name)
+    public Goblin(int health, int damage, int defence, int agility, String name)
     {
         super(health, damage, defence, agility, name);
     }//end Goblin constructor
