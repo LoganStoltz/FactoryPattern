@@ -1,6 +1,9 @@
-package Entities;
+package SimpleFactory;
 
-public class Factory {
+import Entities.Entity;
+import Entities.Goblin;
+
+public class SimpleFactory {
 
     public void createMonster(String monster){
         Entity entity;

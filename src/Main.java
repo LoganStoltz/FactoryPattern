@@ -1,6 +1,4 @@
-package FactoryPattern;
-
-import Entities.Factory;
+import SimpleFactory.SimpleFactory;
 
 public class Main {
 
@@ -8,7 +6,7 @@ public class Main {
 
         System.out.println("Hello world");
 
-        Factory factory = new Factory();
+        SimpleFactory factory = new SimpleFactory();
 
         factory.createMonster("goblin");
 
