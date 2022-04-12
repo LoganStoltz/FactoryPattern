@@ -2,11 +2,11 @@ package Entities;
 
 public abstract class Entity
 {
-    private int health;
-    private int damage;
-    private int defense;
-    private int agility;
-    private String name;
+    private int health = 100;
+    private int damage = 10;
+    private int defense = 5;
+    private int agility = 3;
+    private String name = "BadGuy";
 
     //In the future, we may want separate stats for max health and current health
     public Entity(int health, int damage, int defense, int agility, String name)
@@ -20,6 +20,14 @@ public abstract class Entity
         this.agility = agility;
         this.name = name;
     }//end Entity Constructor
+
+    public Entity(String name)
+    {
+        if(name.isEmpty())
+            throw new IllegalArgumentException("Bad Parameter(s) --- Entity Parent Constructor");
+
+        this.name = name;
+    }
 
     public String toString() {
         //These lines could be condensed into one, but I'm keeping them separate for clarity (at least for now)
