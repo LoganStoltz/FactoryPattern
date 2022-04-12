@@ -1,4 +1,12 @@
 package AbstractFactory;
+import FactoryMethod.*;
 
-public class AbstractFactory {
+import Entities.Entity;
+
+public abstract class AbstractFactory {
+
+    private Factory factory;
+
+    public Entity createEntity
+
 }
