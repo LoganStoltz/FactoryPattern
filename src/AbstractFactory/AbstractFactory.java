@@ -7,6 +7,6 @@ public abstract class AbstractFactory {
 
     private Factory factory;
 
-    public Entity createEntity
+    public Entity createEntity;
 
 }
