@@ -1,4 +1,8 @@
 package Entities;
 
-public class Marksman {
+public class Marksman extends Entity{
+    public Marksman(String name)
+    {
+        super(name);
+    }
 }
