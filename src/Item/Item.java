@@ -12,6 +12,36 @@ public abstract class Item {
         this.weight = weight;
     }
 
+    public Item(Item item){
+        this(item.name,item.damage,item.weight);
+    }
+
+    // Getters
+    public String getName() {
+        return name;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDamage(int damage) {
+        this.damage = damage;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
     @Override
     public String toString() {
         return "Item{" +

@@ -1,4 +1,5 @@
 import SimpleFactory.SimpleFactory;
+import Mains.*;
 
 public class Main {
 
@@ -9,6 +10,8 @@ public class Main {
         SimpleFactory factory = new SimpleFactory();
 
         factory.createMonster("goblin");
+
+        RyansMain.run();
 
     }
 

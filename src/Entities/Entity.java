@@ -1,5 +1,8 @@
 package Entities;
 
+import Item.Item;
+import Atire.*;
+
 public abstract class Entity
 {
     private int health = 100;
@@ -7,10 +10,12 @@ public abstract class Entity
     private int defense = 5;
     private int agility = 3;
     private String name = "BadGuy";
+    private Item weapon = null;
+    private Atire clothes = null;
 
     //In the future, we may want separate stats for max health and current health
     public Entity(int health, int damage, int defense, int agility, String name)
-    {
+     {
         if(health <= 0 || damage < 0 || defense < 0 || agility < 0 || name.isEmpty())
                 throw new IllegalArgumentException("Bad Parameter(s) --- Entity Parent Constructor");
 
@@ -27,6 +32,15 @@ public abstract class Entity
             throw new IllegalArgumentException("Bad Parameter(s) --- Entity Parent Constructor");
 
         this.name = name;
+    }
+
+    // Set Weapon
+    public void setWeapon(Item weapon) {
+        this.weapon = weapon;
+    }
+    // Set Atire
+    public void setAtire(Atire clothes){
+        this.clothes = clothes;
     }
 
     public String toString() {
