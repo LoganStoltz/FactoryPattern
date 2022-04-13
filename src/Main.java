@@ -1,3 +1,8 @@
+import Entities.Entity;
+import FactoryMethod.Factory;
+import FactoryMethod.FantasyFactory;
+import FactoryMethod.FpsFactory;
+import Mains.factoryMethodMain;
 import SimpleFactory.SimpleFactory;
 import Mains.*;
 
@@ -5,11 +10,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello world");
+        //Simple Factory
+        SimpleFactory simpleFactory = new SimpleFactory();
+        simpleFactory.createMonster("goblin");
 
-        SimpleFactory factory = new SimpleFactory();
-
-        factory.createMonster("goblin");
+        //Factory Method
+        factoryMethodMain factoryMethod = new factoryMethodMain();
+        factoryMethod.presentFactory();
 
         RyansMain.run();
 
