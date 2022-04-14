@@ -8,7 +8,7 @@ import Entities.Shotgunner;
 
 public class FpsFactory extends Factory{
 
-    Entity createEntity(String entityName){
+    public Entity createEntity(String entityName){
         if (entityName.equals("demolitionman")){
             return new DemolitionMan(10,10,10,10,"Demo Man");
         }else if (entityName.equals("heavygunner")){

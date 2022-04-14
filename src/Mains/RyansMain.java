@@ -8,11 +8,13 @@ public class RyansMain {
 
     public static void run(){
 
-        AbstractFactory fantasyFactory = new AbstractFantasyFactory();
+        AbstractEntityItemAndAttireFactory abstractFantasyFactory = new FantasyEntityItemAndAttireFactory();
 
-        Entity goblin = fantasyFactory.createEntity("Goblin");
+        Entity goblin = abstractFantasyFactory.createEntity("goblin");
 
-        System.out.println(goblin);
+        System.out.println("Abstract factory goblin's toString: " + goblin +
+                "\nGoblins item: " + goblin.getWeapon()
+        + "\nGoblins clothes: " + goblin.getClothes());
 
     }
 

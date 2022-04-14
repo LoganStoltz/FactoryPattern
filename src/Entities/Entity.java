@@ -34,13 +34,22 @@ public abstract class Entity
         this.name = name;
     }
 
-    // Set Weapon
+    // Set and get Weapon
     public void setWeapon(Item weapon) {
         this.weapon = weapon;
     }
-    // Set Atire
-    public void setAtire(Atire clothes){
+
+    public Item getWeapon() {
+        return weapon;
+    }
+
+    // Set and get Atire
+    public void setClothes(Atire clothes){
         this.clothes = clothes;
+    }
+
+    public Atire getClothes() {
+        return clothes;
     }
 
     public String toString() {

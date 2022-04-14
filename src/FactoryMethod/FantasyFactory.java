@@ -8,7 +8,7 @@ import Entities.Troll;
 
 public class FantasyFactory extends Factory{
 
-    Entity createEntity(String entityName){
+    public Entity createEntity(String entityName){
         if (entityName.equals("goblin")){
             return new Goblin(10,10,10,10,"Grimble");
         }else if (entityName.equals("skeleton")){

@@ -1,34 +1,32 @@
 package AbstractFactory;
 
 import Atire.*;
-import Entities.*;
+import Entities.Entity;
+import Entities.Goblin;
+import Entities.Troll;
 import Item.*;
 
-public class AbstractFantasyFactory extends AbstractFactory{
+public class FantasyEntityItemAndAttireFactorySimplified {
 
-    // Keys
-
-    // Create Entity
-    @Override
-    public Entity createEntity(String entityKey){
+    public Entity createEntity(String entityKey, String entityName){
 
         Entity entity;
 
         if(entityKey.equals("Goblin")){
-            entity = new Goblin(2,2,2,4,"Mulrok");
+            entity = new Goblin(2,2,2,4,entityName);
             entity.setWeapon(createItem("Rusty sword"));
-            entity.setAtire(createAtire("Goblin Armor"));
+            entity.setClothes(createAtire("Goblin armor"));
             return entity;
         }
         else if(entityKey.equals("Troll")){
-            entity = new Troll();
+            entity = new Troll(entityName);
+            entity.setWeapon(createItem("Club"));
+            entity.setClothes(createAtire("Troll clothes"));
         }
-        else
-            return null;
+        return null;
     }
 
     public Item createItem(String itemKey){
-
         if(itemKey.equals("Rusty sword"))
             return new RustySword();
         else if(itemKey.equals("Club"))
@@ -38,9 +36,9 @@ public class AbstractFantasyFactory extends AbstractFactory{
     }
 
     public Atire createAtire(String atireKey) {
-        if(atireKey.equals("Goblin Armor"))
+        if(atireKey.equals("Goblin armor"))
             return new GoblinArmor();
-        else if(atireKey.equals("Troll clothes"))
+        else if(atireKey.equals("troll clothes"))
             return new TrollClothes();
         else
             return null;

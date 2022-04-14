@@ -32,5 +32,11 @@ public abstract class Atire {
         this.armorRating = armorRating;
     }
 
-
+    @Override
+    public String toString() {
+        return "Atire{" +
+                "lable='" + lable + '\'' +
+                ", armorRating=" + armorRating +
+                '}';
+    }
 }

@@ -11,6 +11,6 @@ public abstract class Factory {
         return ent;
     }
 
-    abstract Entity createEntity(String entityName);
+    public abstract Entity createEntity(String entityName);
 
 }
