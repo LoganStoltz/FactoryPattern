@@ -11,7 +11,7 @@ public abstract class Entity
     private int agility = 3;
     private String name = "BadGuy";
     private Item weapon = null;
-    private Atire clothes = null;
+    private Attire clothes = null;
 
     //In the future, we may want separate stats for max health and current health
     public Entity(int health, int damage, int defense, int agility, String name)
@@ -44,11 +44,11 @@ public abstract class Entity
     }
 
     // Set and get Atire
-    public void setClothes(Atire clothes){
+    public void setClothes(Attire clothes){
         this.clothes = clothes;
     }
 
-    public Atire getClothes() {
+    public Attire getClothes() {
         return clothes;
     }
 

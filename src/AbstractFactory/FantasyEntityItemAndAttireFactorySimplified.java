@@ -8,22 +8,24 @@ import Item.*;
 
 public class FantasyEntityItemAndAttireFactorySimplified {
 
-    public Entity createEntity(String entityKey, String entityName){
+    public Entity createEntity(String entityKey){
 
         Entity entity;
 
-        if(entityKey.equals("Goblin")){
-            entity = new Goblin(2,2,2,4,entityName);
+        if(entityKey.equals("goblin")){
+            entity = new Goblin("Azog");
             entity.setWeapon(createItem("Rusty sword"));
             entity.setClothes(createAtire("Goblin armor"));
             return entity;
         }
-        else if(entityKey.equals("Troll")){
-            entity = new Troll(entityName);
+        else if(entityKey.equals("troll")){
+            entity = new Troll("Bradley the troll");
             entity.setWeapon(createItem("Club"));
             entity.setClothes(createAtire("Troll clothes"));
+            return entity;
         }
-        return null;
+        else
+            return null;
     }
 
     public Item createItem(String itemKey){
@@ -35,7 +37,7 @@ public class FantasyEntityItemAndAttireFactorySimplified {
             return null;
     }
 
-    public Atire createAtire(String atireKey) {
+    public Attire createAtire(String atireKey) {
         if(atireKey.equals("Goblin armor"))
             return new GoblinArmor();
         else if(atireKey.equals("troll clothes"))

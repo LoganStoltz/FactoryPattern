@@ -1,22 +1,22 @@
 package Atire;
 
-public abstract class Atire {
+public abstract class Attire {
 
-    private String lable;
+    private String label;
     private int armorRating;
 
     // Constructor
-    public Atire(String lable,int armorRating) {
-        this.lable = lable;
+    public Attire(String label, int armorRating) {
+        this.label = label;
         this.armorRating = armorRating;
     }
         // Copy constructor
-    public Atire(Atire atire){
-        this(atire.lable,atire.armorRating);
+    public Attire(Attire attire){
+        this(attire.label,attire.armorRating);
     }
     // Getters
-    public String getLable() {
-        return lable;
+    public String getlabel() {
+        return label;
     }
 
     public int getArmorRating() {
@@ -24,8 +24,8 @@ public abstract class Atire {
     }
 
     // Setters
-    public void setLable(String lable) {
-        this.lable = lable;
+    public void setlabel(String label) {
+        this.label = label;
     }
 
     public void setArmorRating(int armorRating) {
@@ -34,8 +34,8 @@ public abstract class Atire {
 
     @Override
     public String toString() {
-        return "Atire{" +
-                "lable='" + lable + '\'' +
+        return "Attire{" +
+                "label='" + label + '\'' +
                 ", armorRating=" + armorRating +
                 '}';
     }

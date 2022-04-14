@@ -1,8 +1,9 @@
 package AbstractFactory;
 
+import AbstractFactory.ItemFactory;
 import Item.*;
 
-public class FantasyItemFactory extends ItemFactory{
+public class FantasyItemFactory extends ItemFactory {
 
     @Override
     public Item createItem(String itemKey){

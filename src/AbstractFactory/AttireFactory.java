@@ -1,7 +1,7 @@
 package AbstractFactory;
 
-import Atire.Atire;
+import Atire.Attire;
 
 public abstract class AttireFactory {
-    public abstract Atire createAttire(String attireKey);
+    public abstract Attire createAttire(String attireKey);
 }

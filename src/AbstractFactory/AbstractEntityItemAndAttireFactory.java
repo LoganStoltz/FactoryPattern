@@ -1,5 +1,5 @@
 package AbstractFactory;
-import Atire.Atire;
+import Atire.Attire;
 import FactoryMethod.*;
 
 import Entities.Entity;
@@ -38,7 +38,7 @@ public abstract class AbstractEntityItemAndAttireFactory {
     // createItem - returns Item
     public abstract Item createItem(String itemKey);
 
-    public abstract Atire createAttire(String attireKey);
+    public abstract Attire createAttire(String attireKey);
 
 }
 
