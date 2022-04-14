@@ -48,4 +48,16 @@ public class FantasyEntityItemAndAttireFactory extends AbstractEntityItemAndAtti
             else
                 return null;
         }
+
+        // Create item
+        @Override
+        public Item createItem(String itemKey){
+            return this.getItemFactory().createItem(itemKey);
+        }
+
+        // Create Attire
+        @Override
+        public Atire createAttire(String attireKey){
+            return this.getAttireFactory().createAttire(attireKey);
+        }
 }

@@ -7,9 +7,9 @@ import Item.Item;
 
 public abstract class AbstractEntityItemAndAttireFactory {
 
-    private Factory factory;
-    private ItemFactory itemFactory;
-    private AttireFactory attireFactory;
+    private final Factory factory;
+    private final ItemFactory itemFactory;
+    private final AttireFactory attireFactory;
 
     public AbstractEntityItemAndAttireFactory(Factory factory,ItemFactory itemFactory,
                                               AttireFactory attireFactory){
@@ -36,12 +36,9 @@ public abstract class AbstractEntityItemAndAttireFactory {
     public abstract Entity createEntity(String entityKey);
 
     // createItem - returns Item
-    public Item createItem(String itemKey){
-        return this.itemFactory.createItem(itemKey);
-    }
-    public Atire createAttire(String attireKey){
-        return this.attireFactory.createAttire(attireKey);
-    }
+    public abstract Item createItem(String itemKey);
+
+    public abstract Atire createAttire(String attireKey);
 
 }
 
