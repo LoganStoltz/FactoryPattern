@@ -1,10 +1,11 @@
 package AbstractFactory;
 
+import AbstractFactory.AttireFactory;
 import Atire.*;
 
-public class FantasyAttireFactory extends AttireFactory{
+public class FantasyAttireFactory extends AttireFactory {
 
-    public Atire createAttire(String atireKey){
+    public Attire createAttire(String atireKey){
         if(atireKey.equals("Goblin armor"))
             return new GoblinArmor();
         else if(atireKey.equals("Troll clothes"))

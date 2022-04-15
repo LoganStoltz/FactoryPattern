@@ -18,7 +18,7 @@ public class Main {
         factoryMethodMain factoryMethod = new factoryMethodMain();
         factoryMethod.presentFactory();
 
-        RyansMain.run();
+        RyansMain.runSimpleAbstractFactory();
 
     }
 

@@ -2,13 +2,10 @@ package AbstractFactory;
 
 import Atire.*;
 import Entities.Entity;
-import Entities.Goblin;
-import Entities.Troll;
-import FactoryMethod.Factory;
 import FactoryMethod.FantasyFactory;
 import Item.*;
 
-public class FantasyEntityItemAndAttireFactory extends AbstractEntityItemAndAttireFactory{
+public class FantasyEntityItemAndAttireFactory extends AbstractEntityItemAndAttireFactory {
 
         /* Entity keys
             - "Goblin": Goblin
@@ -25,7 +22,9 @@ public class FantasyEntityItemAndAttireFactory extends AbstractEntityItemAndAtti
 
         // Constructor
         public FantasyEntityItemAndAttireFactory() {
-            super(new FantasyFactory(),new FantasyItemFactory(),new FantasyAttireFactory());
+            super(new FantasyFactory(),
+                    new FantasyItemFactory(),
+                    new FantasyAttireFactory());
         }
         // Create Entity
         @Override
@@ -57,7 +56,7 @@ public class FantasyEntityItemAndAttireFactory extends AbstractEntityItemAndAtti
 
         // Create Attire
         @Override
-        public Atire createAttire(String attireKey){
+        public Attire createAttire(String attireKey){
             return this.getAttireFactory().createAttire(attireKey);
         }
 }

@@ -1,6 +1,6 @@
 package Atire;
 
-public class GoblinArmor extends Atire{
+public class GoblinArmor extends Attire {
 
     public GoblinArmor() {
 
