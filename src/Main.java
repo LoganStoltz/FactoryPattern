@@ -11,14 +11,13 @@ public class Main {
     public static void main(String[] args) {
 
         //Simple Factory
-        SimpleFactory simpleFactory = new SimpleFactory();
-        simpleFactory.createMonster("goblin");
+        //simpleMain run = new simpleMain();
 
         //Factory Method
-        factoryMethodMain factoryMethod = new factoryMethodMain();
-        factoryMethod.presentFactory();
+        //factoryMethodMain factoryMethod = new factoryMethodMain();
+        //factoryMethod.presentFactory();
 
-        RyansMain.runSimpleAbstractFactory();
+        //RyansMain.runSimpleAbstractFactory();
 
     }
 
